@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/homepageapp/generatediphone11prox1widget/GeneratedIPhone11ProX1Widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/GeneratedIPhone11ProX1Widget',
+      routes: {
+        '/GeneratedIPhone11ProX1Widget': (context) =>
+            GeneratedIPhone11ProX1Widget(),
+      },
     );
   }
 }
