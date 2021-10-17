@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:path_drawing/path_drawing.dart';
 
 class Mask extends StatelessWidget {
-  const Mask(this.clipPath, {this.child});
+  const Mask(this.clipPath, {required this.child});
 
-  factory Mask.fromSVGPath(String svgPath, {Widget child, Offset offset}) {
+  factory Mask.fromSVGPath(String svgPath, {required Widget child, required Offset offset}) {
     Path path = parseSvgPathData(svgPath);
     if (offset != null) {
       path = path.shift(offset);

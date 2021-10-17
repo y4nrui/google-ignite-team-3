@@ -8,7 +8,7 @@ import 'package:flutter/widgets.dart';
 import 'package:path_drawing/path_drawing.dart';
 
 class SvgWidget extends StatelessWidget {
-  const SvgWidget({this.painters});
+  const SvgWidget({required this.painters});
 
   final List<SvgPathPainter> painters;
 
@@ -20,13 +20,14 @@ class SvgWidget extends StatelessWidget {
 class SvgPathPainter {
   SvgPathPainter._(this._paint);
 
+
   factory SvgPathPainter.fill() {
     final Paint paint = Paint()..style = PaintingStyle.fill;
     return SvgPathPainter._(paint);
   }
 
   factory SvgPathPainter.stroke(double strokeWidth,
-      {StrokeCap strokeCap, StrokeJoin strokeJoin, double strokeMiterLimit}) {
+      {required StrokeCap strokeCap, required StrokeJoin strokeJoin, required double strokeMiterLimit}) {
     final Paint paint = Paint()
       ..style = PaintingStyle.fill
       ..strokeWidth = strokeWidth;
@@ -42,65 +43,65 @@ class SvgPathPainter {
     return SvgPathPainter._(paint);
   }
 
-  Notifier repaint;
+  Notifier? repaint;
   final List<Path> _paths = [];
-  Path _clipPath;
-  final Paint _paint;
+  late Path? _clipPath;
+  final Paint? _paint;
 
   void addPath(String path) => _paths.add(parseSvgPathData(path));
 
   void addClipPath(String path) {
     _clipPath ??= Path();
-    _clipPath.extendWithPath(parseSvgPathData(path), Offset.zero);
+    _clipPath?.extendWithPath(parseSvgPathData(path), Offset.zero);
   }
 
   set color(Color color) {
-    _paint.color = color;
+    _paint?.color = color;
   }
 
   void setLinearGradient(
-      {@required double startX,
-      @required double startY,
-      @required double endX,
-      @required double endY,
-      @required List<Color> colors,
-      List<double> colorStops}) {
-    _paint.shader = ui.Gradient.linear(
+      {@required required double startX,
+      @required required double startY,
+      @required required double endX,
+      @required required double endY,
+      @required required List<Color> colors,
+      required List<double> colorStops}) {
+    _paint?.shader = ui.Gradient.linear(
         Offset(startX, startY), Offset(endX, endY), colors, colorStops);
   }
 
   void setRadialGradient(
-      {@required double centerX,
-      @required double centerY,
-      @required double radius,
-      @required List<Color> colors,
-      List<double> colorStops}) {
-    _paint.shader = ui.Gradient.radial(
+      {@required required double centerX,
+      @required required double centerY,
+      @required required double radius,
+      @required required List<Color> colors,
+      required List<double> colorStops}) {
+    _paint?.shader = ui.Gradient.radial(
         Offset(centerX, centerY), radius, colors, colorStops);
   }
 
   void setSweepGradient({
-    @required double centerX,
-    @required double centerY,
-    @required List<Color> colors,
-    List<double> colorStops,
-    double startAngle,
-    double endAngle,
+    @required required double centerX,
+    @required required double centerY,
+    @required required List<Color> colors,
+    required List<double> colorStops,
+    required double startAngle,
+    required double endAngle,
   }) {
-    _paint.shader = ui.Gradient.sweep(Offset(centerX, centerY), colors,
+    _paint?.shader = ui.Gradient.sweep(Offset(centerX, centerY), colors,
         colorStops, TileMode.clamp, startAngle, endAngle);
   }
 
   void setBlur(double sigma) {
-    _paint.maskFilter = MaskFilter.blur(BlurStyle.inner, sigma);
+    _paint?.maskFilter = MaskFilter.blur(BlurStyle.inner, sigma);
   }
 
-  Future<void> setImage({String imageAssetPath, double opacity}) async {
+  Future<void> setImage({required String imageAssetPath, required double opacity}) async {
     final ByteData data = await rootBundle.load(imageAssetPath);
     final codec = await ui.instantiateImageCodec(Uint8List.view(data.buffer));
     final frameInfo = await codec.getNextFrame();
-    _paint.color = const Color(0xFFFFFFFF).withOpacity(opacity ?? 1);
-    _paint.shader = ImageShader(
+    _paint?.color = const Color(0xFFFFFFFF).withOpacity(opacity);
+    _paint?.shader = ImageShader(
       frameInfo.image,
       TileMode.repeated,
       TileMode.repeated,
@@ -132,7 +133,7 @@ class SvgPathPainter {
 
   void draw(Canvas canvas) {
     if (_clipPath != null) {
-      canvas.clipPath(_clipPath);
+      canvas.clipPath(Path _clipPath);
     }
     _paths.forEach((element) => canvas.drawPath(element, _paint));
   }
@@ -152,7 +153,7 @@ class SvgPathsPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    _painters?.forEach((element) => element.draw(canvas));
+    _painters.forEach((element) => element.draw(canvas));
   }
 }
 

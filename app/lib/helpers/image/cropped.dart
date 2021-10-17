@@ -57,13 +57,13 @@ import 'package:flutter/services.dart';
 class CroppedImage extends StatelessWidget {
   const CroppedImage(
     String assetUrl, {
-    @required this.width,
-    @required this.height,
+    @required required this.width,
+    @required required this.height,
     this.scaleX = 1,
     this.scaleY = 1,
     this.offsetX = 0,
     this.offsetY = 0,
-    this.color,
+    required this.color,
   })  : assert(assetUrl != null),
         assert(width != null),
         assert(height != null),
@@ -130,8 +130,8 @@ class CroppedImage extends StatelessWidget {
 
 class ImageEditor extends CustomPainter {
   ImageEditor({
-    this.image,
-    this.offset,
+    required this.image,
+    required this.offset,
   });
 
   ui.Image image;
