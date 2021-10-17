@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.17.0
   animations: ^2.0.0
   path_drawing: ^0.4.1
+  settings_ui: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,9 @@ flutter:
     - best_streak.png
     - curr_streak.png
     - total_days_donated.png
+    - assets/heart-hand-color.png
+    - assets/Elderly-Poor-Singapore.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
