@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class LineTitles {
   static getTitleData() => FlTitlesData(
@@ -7,11 +8,13 @@ class LineTitles {
         bottomTitles: SideTitles(
           showTitles: true,
           reservedSize: 35,
-          getTextStyles: (value) => const TextStyle(
-            color: Color(0xff68737d),
-            fontWeight: FontWeight.bold,
-            fontSize: 16,
-          ),
+          getTextStyles: (context, value) {
+            return TextStyle(
+              color: Color(0xff68737d),
+              fontWeight: FontWeight.bold,
+              fontSize: 16
+            );
+          },
           getTitles: (value) {
             switch (value.toInt()) {
               case 0:
@@ -33,11 +36,13 @@ class LineTitles {
         ),
         leftTitles: SideTitles(
           showTitles: true,
-          getTextStyles: (value) => const TextStyle(
-            color: Color(0xff67727d),
-            fontWeight: FontWeight.bold,
-            fontSize: 15,
-          ),
+          getTextStyles: (context, value) {
+            return TextStyle(
+              color: Color(0xff67727d),
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            );
+          },
           getTitles: (value) {
             switch (value.toInt()) {
               case 1:

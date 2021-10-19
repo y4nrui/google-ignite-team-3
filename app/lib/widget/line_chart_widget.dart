@@ -1,5 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
-import 'package:thedashboard/widget/line_titles.dart';
+import 'package:app/widget/line_titles.dart';
 import 'package:flutter/material.dart';
 
 class LineChartWidget extends StatelessWidget {
