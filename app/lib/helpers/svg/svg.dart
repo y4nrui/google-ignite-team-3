@@ -20,14 +20,15 @@ class SvgWidget extends StatelessWidget {
 class SvgPathPainter {
   SvgPathPainter._(this._paint);
 
-
   factory SvgPathPainter.fill() {
     final Paint paint = Paint()..style = PaintingStyle.fill;
     return SvgPathPainter._(paint);
   }
 
   factory SvgPathPainter.stroke(double strokeWidth,
-      {required StrokeCap strokeCap, required StrokeJoin strokeJoin, required double strokeMiterLimit}) {
+      {StrokeCap strokeCap = StrokeCap.round,
+      StrokeJoin strokeJoin = ui.StrokeJoin.round,
+      double strokeMiterLimit = 1}) {
     final Paint paint = Paint()
       ..style = PaintingStyle.fill
       ..strokeWidth = strokeWidth;
@@ -96,7 +97,8 @@ class SvgPathPainter {
     _paint?.maskFilter = MaskFilter.blur(BlurStyle.inner, sigma);
   }
 
-  Future<void> setImage({required String imageAssetPath, required double opacity}) async {
+  Future<void> setImage(
+      {required String imageAssetPath, required double opacity}) async {
     final ByteData data = await rootBundle.load(imageAssetPath);
     final codec = await ui.instantiateImageCodec(Uint8List.view(data.buffer));
     final frameInfo = await codec.getNextFrame();
@@ -133,9 +135,9 @@ class SvgPathPainter {
 
   void draw(Canvas canvas) {
     if (_clipPath != null) {
-      canvas.clipPath(Path _clipPath);
+      canvas.clipPath(_clipPath!);
     }
-    _paths.forEach((element) => canvas.drawPath(element, _paint));
+    _paths.forEach((element) => canvas.drawPath(element, _paint!));
   }
 }
 

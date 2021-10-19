@@ -1,4 +1,4 @@
-import 'package:thedashboard/widget/line_chart_widget.dart';
+import 'package:app/widget/line_chart_widget.dart';
 import 'package:flutter/material.dart';
 
 class LineChartPage extends StatelessWidget {
