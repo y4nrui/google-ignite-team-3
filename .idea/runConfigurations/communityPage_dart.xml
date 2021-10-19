@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="communityPage.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" nameIsGenerated="true">
-    <option name="filePath" value="$PROJECT_DIR$/app/lib/communityPage.dart" />
-    <option name="workingDirectory" value="$PROJECT_DIR$/app" />
-    <method v="2" />
-  </configuration>
-</component>

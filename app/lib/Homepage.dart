@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/homepageapp/generatediphone11prox1widget/GeneratedIPhone11ProX1Widget.dart';
 
-void main() {
-  runApp(HomepageApp());
-}
 
 class HomepageApp extends StatelessWidget {
   @override
