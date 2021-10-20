@@ -12,6 +12,7 @@
 //   int _page = 0;
 //   GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 //   final List<Widget> _children = [
+//     Widget(),
 //     Page2(),
 //     Page3(),
 //   ];
