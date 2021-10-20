@@ -127,8 +127,7 @@ class Body extends StatelessWidget {
           ],
         ),
         Container(
-          // width: MediaQuery.of(context).size.width,
-          width: 200,
+          width: MediaQuery.of(context).size.width,
           height: 200,
           child: LineChartPage(),
         )
