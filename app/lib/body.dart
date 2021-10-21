@@ -7,8 +7,10 @@ import 'package:app/challenges.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+        children: [
         Container(
           color: Colors.amber[500],
           height: 60,
@@ -144,8 +146,11 @@ class Body extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: 200,
           child: LineChartPage(),
-        )
+        ),
+        SizedBox(height: 20),
       ],
-    );
-  }
-}
+    )
+  
+    ));
+      
+}}
