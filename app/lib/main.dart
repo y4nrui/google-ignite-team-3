@@ -1,13 +1,15 @@
-// PLEASE NOTE: I changed main.dart to route to dashboard first
-// SCROLL DOWN for the code that leads to HOMEPAGE
+import 'dart:ui';
+import 'package:app/nav.dart';
 import 'package:flutter/material.dart';
 // import '../generatediphone11prox1widget/GeneratedIPhone11ProX1Widget.dart';
-import 'package:app/dashboard.dart';
-import 'package:app/give.dart';
+// import 'package:app/dashboard.dart';
+// import 'package:app/give.dart';
+// import 'package:app/nav.dart';
+// import 'package:app/temp_home.dart';
 
 import 'dart:io';
 import 'package:app/app_theme.dart';
-import 'hotel_booking/hotel_home_screen.dart';
+// import 'hotel_booking/hotel_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -25,7 +27,7 @@ class HomepageApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: HotelHomeScreen(),
+      home: Nav(),
     );
   }
 }
@@ -41,6 +43,7 @@ class HexColor extends Color {
     return int.parse(hexColor, radix: 16);
   }
 }
+
 
 
 
