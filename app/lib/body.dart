@@ -22,7 +22,16 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
-        child: InkWell(
+        InkWell(
+          onTap: () {
+                FocusScope.of(context).requestFocus(FocusNode());
+                Navigator.push<dynamic>(
+                  context,
+                  MaterialPageRoute<dynamic>(
+                      builder: (BuildContext context) => Challenges(),
+                      fullscreenDialog: true),
+                );
+              },
           child: Container(
             height: 50,
             child: const Center(
@@ -32,15 +41,7 @@ class Body extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              onTap: () {
-                FocusScope.of(context).requestFocus(FocusNode());
-                Navigator.push<dynamic>(
-                  context,
-                  MaterialPageRoute<dynamic>(
-                      builder: (BuildContext context) => Challenges(),
-                      fullscreenDialog: true),
-                );
-              },
+              
             ),
           ),
         ),
