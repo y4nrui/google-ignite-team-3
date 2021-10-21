@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
     },
     {
       "imgAccount": "images/profil.png",
-      "imgbackground": "images/splash.jpg",
+      "imgbackground": "images/profil.png",
       "name": "John Doe",
       "Coloros": Colors.blue[100]
     },
