@@ -3,6 +3,7 @@ import 'package:app/page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'hotel_booking/hotel_home_screen.dart';
 import 'package:app/temp_home.dart';
+import 'package:app/communityPage.dart';
 
 
 class Nav extends StatefulWidget {
@@ -15,9 +16,9 @@ class _NavState extends State<Nav> {
 
   final screens = [
     // enter widgets here
-    TempHome(),
     HotelHomeScreen(),
     Dashboard(),
+    Home(),
     ProfilePage()
   ];
 
@@ -30,10 +31,6 @@ class _NavState extends State<Nav> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                title: Text('Home'),
-                backgroundColor: Colors.blue),
-            BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
                 title: Text('Give'),
                 backgroundColor: Colors.blue),
@@ -45,6 +42,10 @@ class _NavState extends State<Nav> {
                 icon: Icon(Icons.groups),
                 title: Text('Community'),
                 backgroundColor: Colors.blue),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              title: Text('Profile'),
+              backgroundColor: Colors.blue),
           ],
           onTap: (index) {
             setState(() {
