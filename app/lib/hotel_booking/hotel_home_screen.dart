@@ -559,7 +559,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
             Expanded(
               child: Center(
                 child: Text(
-                  'Donate',
+                  'Give',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 22,
