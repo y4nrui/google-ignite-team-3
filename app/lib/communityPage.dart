@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
   // ?  Storyyyy ============================
   List Story = [
     {
-      "imgAccount": Image.asset("assets/images/profil.png"),
+      "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
       "name": "Create story",
       "Coloros": Colors.white
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
       "Coloros": Colors.brown[100]
     },
     {
-      "imgAccount": "assets/images/profil.png",
+      "imgAccount": "assets/mages/profil.png",
       "imgbackground": "assets/images/profil.png",
       "name": "Bassem Bel",
       "Coloros": Colors.blue[100]
@@ -114,8 +114,7 @@ class _HomeState extends State<Home> {
                             radius: 25,
                             child: CircleAvatar(
                               radius: 25,
-                              backgroundImage:
-                                  AssetImage('assets/images/profil.png'),
+                              backgroundImage: AssetImage('assets/images/profil.png'),
                             ),
                           ),
                         ),
@@ -451,7 +450,7 @@ class _HomeState extends State<Home> {
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 width: 230,
-                                height: 145,
+                                height: 150,
                                 padding: EdgeInsets.all(15),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -505,13 +504,13 @@ class _HomeState extends State<Home> {
                                       backgroundColor: Color(0xffFDCF09),
                                       child: CircleAvatar(
                                         radius: 18,
-                                        backgroundImage: AssetImage(
-                                            'assets/images/profil.png'),
+                                        backgroundImage:
+                                            AssetImage('assets/images/profil.png'),
                                       ),
                                     )),
                                 Container(
                                   width: 200,
-                                  height: 60,
+                                  height: 45,
                                   margin: EdgeInsets.only(top: 15),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[300],
@@ -695,7 +694,7 @@ class _HomeState extends State<Home> {
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 width: 230,
-                                height: 110,
+                                height: 115,
                                 padding: EdgeInsets.all(15),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -716,6 +715,7 @@ class _HomeState extends State<Home> {
                                 )),
                             Container(
                               width: 230,
+                              height: 1,
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
