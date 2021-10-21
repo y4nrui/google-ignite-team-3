@@ -114,8 +114,8 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              margin: EdgeInsets.all(10),
-              height: 70,
+              
+              height: 60,
               child: Text(
                 "Track how frequent you donate",
                 style: TextStyle(

@@ -24,7 +24,7 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           type: BottomNavigationBarType.fixed,
@@ -34,16 +34,16 @@ class _NavState extends State<Nav> {
                 title: Text('Home'),
                 backgroundColor: Colors.blue),
             BottomNavigationBarItem(
-                icon: Icon(Icons.search),
+                icon: Icon(Icons.favorite),
                 title: Text('Give'),
                 backgroundColor: Colors.blue),
             BottomNavigationBarItem(
-                icon: Icon(Icons.camera),
+                icon: Icon(Icons.analytics),
                 title: Text('Dashboard'),
                 backgroundColor: Colors.blue),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                title: Text('Profile'),
+                icon: Icon(Icons.groups),
+                title: Text('Community'),
                 backgroundColor: Colors.blue),
           ],
           onTap: (index) {
