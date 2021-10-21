@@ -1,6 +1,7 @@
 import 'package:app/dashboard.dart';
 import 'package:app/page/profile_page.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'hotel_booking/hotel_home_screen.dart';
 import 'package:app/challenges.dart';
 import 'package:app/communityPage.dart';
@@ -31,7 +32,7 @@ class _NavState extends State<Nav> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.favorite),
+                icon: Icon(FontAwesomeIcons.handHoldingHeart),
                 title: Text('Give'),
                 backgroundColor: Colors.blue),
             BottomNavigationBarItem(
