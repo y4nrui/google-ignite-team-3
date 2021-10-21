@@ -37,49 +37,49 @@ class _HomeState extends State<Home> {
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Mohamed El Amine",
+      "name": "Mohamed Sidek",
       "Coloros": Colors.red[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Abde Benkoula",
+      "name": "Anna Yong",
       "Coloros": Colors.green[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Zakazila 27",
+      "name": "Zach Fang",
       "Coloros": Colors.purple[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Snouci Elby",
+      "name": "Sonia Goh",
       "Coloros": Colors.brown[100]
     },
     {
       "imgAccount": "assets/mages/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Bassem Bel",
+      "name": "Baldaine Koh",
       "Coloros": Colors.blue[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Nadir Larbi",
+      "name": "Nandini Lahar",
       "Coloros": Colors.orange[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Bk Ness",
+      "name": "Brandon Huan",
       "Coloros": Colors.red[100]
     },
     {
       "imgAccount": "assets/images/profil.png",
       "imgbackground": "assets/images/profil.png",
-      "name": "Hmida Mosta",
+      "name": "Huda Allista",
       "Coloros": Colors.yellow[100]
     },
   ];
@@ -304,7 +304,7 @@ class _HomeState extends State<Home> {
                   ListTile(
                     isThreeLine: false,
                     title: Text("Ali Hussein "),
-                    subtitle: Text("Abd Bekoula · 3d · Groups "),
+                    subtitle: Text("Singapore · 3d · Groups "),
                     trailing: Icon(Icons.more_horiz),
                     leading: Container(
                       width: 50,
@@ -335,7 +335,7 @@ class _HomeState extends State<Home> {
                       children: [
                         Container(
                             margin: EdgeInsets.only(left: 10),
-                            child: Text("👍😅🥰 $likenumber ",
+                            child: Text("👍🥰 $likenumber ",
                                 style: TextStyle(fontSize: 17))),
                         Container(
                             margin: EdgeInsets.only(right: 10),
@@ -457,13 +457,13 @@ class _HomeState extends State<Home> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "sidou katalouni ",
+                                      "Jamie Oliver ",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.blue),
                                       // textAlign: TextAlign.center,
                                     ),
                                     Text(
-                                      "Kayen 1080 Ti Ras Ras ida tebRi machya 1ans ta3 ta3din ",
+                                      "I love the stories shared by everyone in here ! So inspiring!",
                                       style: TextStyle(fontSize: 20),
                                       // textAlign: TextAlign.center,
                                     ),
@@ -543,8 +543,8 @@ class _HomeState extends State<Home> {
                 children: [
                   ListTile(
                     isThreeLine: false,
-                    title: Text("Les Bigos Mosta"),
-                    subtitle: Text("Hmida Mosta · 3d · Groups "),
+                    title: Text("George Fleix"),
+                    subtitle: Text("Teemothee Angus· 3d · Groups "),
                     trailing: Icon(Icons.more_horiz),
                     leading: Container(
                       width: 50,
@@ -701,13 +701,13 @@ class _HomeState extends State<Home> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Zak Blem 27",
+                                      "Love the Cause",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.blue),
                                       // textAlign: TextAlign.center,
                                     ),
                                     Text(
-                                      "Sahitah Bigoss 💕👍🙌 !! ",
+                                      "Share the love 💕👍🙌 !! ",
                                       style: TextStyle(fontSize: 20),
                                       // textAlign: TextAlign.center,
                                     ),
