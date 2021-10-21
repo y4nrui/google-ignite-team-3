@@ -23,13 +23,13 @@ class _HomeState extends State<Home> {
   // ?  Storyyyy ============================
   List Story = [
     {
-      "imgAccount": Image.asset("images/splash.jpeg"),
-      "imgbackground": "images/splash.jpeg",
+      "imgAccount": Image.asset("images/profil.png"),
+      "imgbackground": "images/profil.png",
       "name": "Create story",
       "Coloros": Colors.white
     },
     {
-      "imgAccount": "images/splash.jpg",
+      "imgAccount": "images/profil.png",
       "imgbackground": "images/splash.jpg",
       "name": "John Doe",
       "Coloros": Colors.blue[100]
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                             radius: 25,
                             child: CircleAvatar(
                               radius: 25,
-                              backgroundImage: AssetImage('images/profil.jpeg'),
+                              backgroundImage: AssetImage('images/profil.png'),
                             ),
                           ),
                         ),
@@ -311,7 +311,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           image: DecorationImage(
-                              image: AssetImage("images/profil6.jpg"),
+                              image: AssetImage("images/profil.png"),
                               fit: BoxFit.cover)),
                       child: null,
                     ),
@@ -439,7 +439,7 @@ class _HomeState extends State<Home> {
                               child: CircleAvatar(
                                 radius: 18,
                                 backgroundImage:
-                                    AssetImage('images/profil7.jpg'),
+                                    AssetImage('images/profil.png'),
                               ),
                             )),
                         Column(
@@ -505,7 +505,7 @@ class _HomeState extends State<Home> {
                                       child: CircleAvatar(
                                         radius: 18,
                                         backgroundImage:
-                                            AssetImage('images/profil6.jpg'),
+                                            AssetImage('images/profil.png'),
                                       ),
                                     )),
                                 Container(
@@ -551,7 +551,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           image: DecorationImage(
-                              image: AssetImage("images/profil.jpeg"),
+                              image: AssetImage("images/profil.png"),
                               fit: BoxFit.cover)),
                       child: null,
                     ),
@@ -564,10 +564,10 @@ class _HomeState extends State<Home> {
                         child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("images/profil7.jpg"),
-                        Image.asset("images/profil6.jpg"),
-                        Image.asset("images/profil4.jpg"),
-                        Image.asset("images/profil3.jpg"),
+                        Image.asset("images/profil.png"),
+                        Image.asset("images/profil.png"),
+                        Image.asset("images/profil.png"),
+                        Image.asset("images/profil.png"),
                       ],
                     )),
                   ),
@@ -683,7 +683,7 @@ class _HomeState extends State<Home> {
                               child: CircleAvatar(
                                 radius: 18,
                                 backgroundImage:
-                                    AssetImage('images/profil2.jpg'),
+                                    AssetImage('images/profil.png'),
                               ),
                             )),
                         Column(
