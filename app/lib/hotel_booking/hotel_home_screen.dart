@@ -542,18 +542,18 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
               height: AppBar().preferredSize.height,
               child: Material(
                 color: Colors.transparent,
-                child: InkWell(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(32.0),
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(Icons.arrow_back),
-                  ),
-                ),
+                // child: InkWell(
+                //   borderRadius: const BorderRadius.all(
+                //     Radius.circular(32.0),
+                //   ),
+                //   onTap: () {
+                //     Navigator.pop(context);
+                //   },
+                //   child: Padding(
+                //     padding: const EdgeInsets.all(8.0),
+                //     child: Icon(Icons.arrow_back),
+                //   ),
+                // ),
               ),
             ),
             Expanded(
