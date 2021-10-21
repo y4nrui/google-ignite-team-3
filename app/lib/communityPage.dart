@@ -303,7 +303,7 @@ class _HomeState extends State<Home> {
                 children: [
                   ListTile(
                     isThreeLine: false,
-                    title: Text("PC Gamer DZ"),
+                    title: Text("Ali Hussein "),
                     subtitle: Text("Abd Bekoula · 3d · Groups "),
                     trailing: Icon(Icons.more_horiz),
                     leading: Container(
@@ -322,7 +322,7 @@ class _HomeState extends State<Home> {
                     height: 100,
                     child: Center(
                       child: Text(
-                        "GTX 1660s khadma mampa 6 mois b garonti prix 11 nbi3 wela nbedel m3a RTX 3060 wela 2080ti balaka khtouna ! 😁😁 ",
+                        "Lets Donate for a better community!! 😁😁 ",
                         style: TextStyle(fontSize: 20),
                         textAlign: TextAlign.center,
                       ),
@@ -516,8 +516,8 @@ class _HomeState extends State<Home> {
                                     color: Colors.grey[300],
                                     borderRadius: BorderRadius.circular(20),
                                   ),
-                                  child: Center(
-                                      child: Text("Hhhh Ak menaytek la 😂")),
+                                  child:
+                                      Center(child: Text("I love this !!! ")),
                                 ),
                               ],
                             ),
