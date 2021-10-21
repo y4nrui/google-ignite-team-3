@@ -226,7 +226,7 @@ class _HomeState extends State<Home> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: new List.generate(10, (int index) {
-                  print(index);
+                  // print(index);
                   return new Card(
                       margin: EdgeInsets.all(10),
                       shadowColor: Colors.black,
