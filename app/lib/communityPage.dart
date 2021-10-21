@@ -561,12 +561,17 @@ class _HomeState extends State<Home> {
                     //color: Colors.red,
                     height: 100,
                     child: Center(
-                        child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                        child: ListView(
+                        
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Image.asset("assets/images/profil.png"),
+                        SizedBox(width: 10),
                         Image.asset("assets/images/profil.png"),
+                        SizedBox(width: 10),
                         Image.asset("assets/images/profil.png"),
+                        SizedBox(width: 10),
                         Image.asset("assets/images/profil.png"),
                       ],
                     )),
