@@ -2,7 +2,7 @@ import 'package:app/dashboard.dart';
 import 'package:app/page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'hotel_booking/hotel_home_screen.dart';
-import 'package:app/temp_home.dart';
+import 'package:app/challenges.dart';
 import 'package:app/communityPage.dart';
 
 
