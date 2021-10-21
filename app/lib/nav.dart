@@ -3,6 +3,7 @@ import 'package:app/page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'hotel_booking/hotel_home_screen.dart';
 import 'package:app/temp_home.dart';
+import 'package:app/communityPage.dart';
 
 
 class Nav extends StatefulWidget {
@@ -15,9 +16,9 @@ class _NavState extends State<Nav> {
 
   final screens = [
     // enter widgets here
-    TempHome(),
     HotelHomeScreen(),
     Dashboard(),
+    Home(),
     ProfilePage()
   ];
 
