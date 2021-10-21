@@ -23,62 +23,62 @@ class _HomeState extends State<Home> {
   // ?  Storyyyy ============================
   List Story = [
     {
-      "imgAccount": Image.asset("images/profil.png"),
-      "imgbackground": "images/profil.png",
+      "imgAccount": Image.asset("assets/images/profil.png"),
+      "imgbackground": "assets/images/profil.png",
       "name": "Create story",
       "Coloros": Colors.white
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "John Doe",
       "Coloros": Colors.blue[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Mohamed El Amine",
       "Coloros": Colors.red[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Abde Benkoula",
       "Coloros": Colors.green[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Zakazila 27",
       "Coloros": Colors.purple[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Snouci Elby",
       "Coloros": Colors.brown[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Bassem Bel",
       "Coloros": Colors.blue[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Nadir Larbi",
       "Coloros": Colors.orange[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Bk Ness",
       "Coloros": Colors.red[100]
     },
     {
-      "imgAccount": "images/profil.png",
-      "imgbackground": "images/profil.png",
+      "imgAccount": "assets/images/profil.png",
+      "imgbackground": "assets/images/profil.png",
       "name": "Hmida Mosta",
       "Coloros": Colors.yellow[100]
     },
@@ -114,7 +114,8 @@ class _HomeState extends State<Home> {
                             radius: 25,
                             child: CircleAvatar(
                               radius: 25,
-                              backgroundImage: AssetImage('images/profil.png'),
+                              backgroundImage:
+                                  AssetImage('assets/images/profil.png'),
                             ),
                           ),
                         ),
@@ -311,7 +312,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           image: DecorationImage(
-                              image: AssetImage("images/profil.png"),
+                              image: AssetImage("assets/images/profil.png"),
                               fit: BoxFit.cover)),
                       child: null,
                     ),
@@ -439,7 +440,7 @@ class _HomeState extends State<Home> {
                               child: CircleAvatar(
                                 radius: 18,
                                 backgroundImage:
-                                    AssetImage('images/profil.png'),
+                                    AssetImage('assets/images/profil.png'),
                               ),
                             )),
                         Column(
@@ -504,8 +505,8 @@ class _HomeState extends State<Home> {
                                       backgroundColor: Color(0xffFDCF09),
                                       child: CircleAvatar(
                                         radius: 18,
-                                        backgroundImage:
-                                            AssetImage('images/profil.png'),
+                                        backgroundImage: AssetImage(
+                                            'assets/images/profil.png'),
                                       ),
                                     )),
                                 Container(
@@ -551,7 +552,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           image: DecorationImage(
-                              image: AssetImage("images/profil.png"),
+                              image: AssetImage("assets/images/profil.png"),
                               fit: BoxFit.cover)),
                       child: null,
                     ),
@@ -564,10 +565,10 @@ class _HomeState extends State<Home> {
                         child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("images/profil.png"),
-                        Image.asset("images/profil.png"),
-                        Image.asset("images/profil.png"),
-                        Image.asset("images/profil.png"),
+                        Image.asset("assets/images/profil.png"),
+                        Image.asset("assets/images/profil.png"),
+                        Image.asset("assets/images/profil.png"),
+                        Image.asset("assets/images/profil.png"),
                       ],
                     )),
                   ),
@@ -683,7 +684,7 @@ class _HomeState extends State<Home> {
                               child: CircleAvatar(
                                 radius: 18,
                                 backgroundImage:
-                                    AssetImage('images/profil.png'),
+                                    AssetImage('assets/images/profil.png'),
                               ),
                             )),
                         Column(
