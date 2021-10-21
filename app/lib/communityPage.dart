@@ -35,50 +35,50 @@ class _HomeState extends State<Home> {
       "Coloros": Colors.blue[100]
     },
     {
-      "imgAccount": "images/profil3.jpg",
-      "imgbackground": "images/profil3.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Mohamed El Amine",
       "Coloros": Colors.red[100]
     },
     {
-      "imgAccount": "images/profil6.jpg",
-      "imgbackground": "images/profil6.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Abde Benkoula",
       "Coloros": Colors.green[100]
     },
     {
-      "imgAccount": "images/profil2.jpg",
-      "imgbackground": "images/profil2.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Zakazila 27",
       "Coloros": Colors.purple[100]
     },
     {
-      "imgAccount": "images/profil4.jpg",
-      "imgbackground": "images/profil4.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Snouci Elby",
       "Coloros": Colors.brown[100]
     },
     {
-      "imgAccount": "images/profil5.jpg",
-      "imgbackground": "images/profil5.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Bassem Bel",
       "Coloros": Colors.blue[100]
     },
     {
-      "imgAccount": "images/profil7.jpg",
-      "imgbackground": "images/profil7.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Nadir Larbi",
       "Coloros": Colors.orange[100]
     },
     {
-      "imgAccount": "images/profil3.jpg",
-      "imgbackground": "images/profil3.jpg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Bk Ness",
       "Coloros": Colors.red[100]
     },
     {
-      "imgAccount": "images/profil.jpeg",
-      "imgbackground": "images/profil.jpeg",
+      "imgAccount": "images/profil.png",
+      "imgbackground": "images/profil.png",
       "name": "Hmida Mosta",
       "Coloros": Colors.yellow[100]
     },
