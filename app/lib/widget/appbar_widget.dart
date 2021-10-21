@@ -12,9 +12,9 @@ AppBar buildAppBar(BuildContext context) {
                   bottom: Radius.circular(30),
                 ),
               ),
-    leading: BackButton(
-    color: Colors.white
-    ),
+    // leading: BackButton(
+    // color: Colors.white
+    // ),
     backgroundColor: Colors.blue.shade300,
     elevation: 0,
     
