@@ -1,6 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'line_chart_page.dart';
+import 'package:app/challenges.dart';
+
 
 class Body extends StatelessWidget {
   @override
@@ -20,14 +22,25 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          height: 50,
-          child: const Center(
-            child: Text(
-              'see more challenges',
-              style: TextStyle(
-                decoration: TextDecoration.underline,
+        child: InkWell(
+          child: Container(
+            height: 50,
+            child: const Center(
+              child: Text(
+                'see more challenges',
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                ),
               ),
+              onTap: () {
+                FocusScope.of(context).requestFocus(FocusNode());
+                Navigator.push<dynamic>(
+                  context,
+                  MaterialPageRoute<dynamic>(
+                      builder: (BuildContext context) => Challenges(),
+                      fullscreenDialog: true),
+                );
+              },
             ),
           ),
         ),

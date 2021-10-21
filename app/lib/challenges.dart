@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TempHome extends StatelessWidget {
+class Challenges extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -8,7 +8,7 @@ class TempHome extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/homepage.png"))
+            image: AssetImage("assets/challenges.png"))
         ),
       ),
     );
