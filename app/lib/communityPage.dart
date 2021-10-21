@@ -319,11 +319,11 @@ class _HomeState extends State<Home> {
                   Container(
                     width: double.infinity,
                     //color: Colors.red,
-                    height: 100,
+                    height: 80,
                     child: Center(
                       child: Text(
                         "Lets Donate for a better community!! 😁😁 ",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 18),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -450,7 +450,7 @@ class _HomeState extends State<Home> {
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 width: 230,
-                                height: 150,
+                                height: 130,
                                 padding: EdgeInsets.all(15),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -464,7 +464,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     Text(
                                       "I love the stories shared by everyone in here ! So inspiring!",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(fontSize: 18),
                                       // textAlign: TextAlign.center,
                                     ),
                                   ],
@@ -566,6 +566,7 @@ class _HomeState extends State<Home> {
                       // mainAxisAlignment: MainAxisAlignment.center,
                       scrollDirection: Axis.horizontal,
                       children: [
+                        SizedBox(width: 10),
                         Image.asset("assets/images/profil.png"),
                         SizedBox(width: 10),
                         Image.asset("assets/images/profil.png"),
@@ -699,7 +700,7 @@ class _HomeState extends State<Home> {
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 width: 230,
-                                height: 115,
+                                height: 100,
                                 padding: EdgeInsets.all(15),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -713,7 +714,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     Text(
                                       "Share the love 💕👍🙌 !! ",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(fontSize: 18),
                                       // textAlign: TextAlign.center,
                                     ),
                                   ],
