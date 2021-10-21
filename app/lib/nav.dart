@@ -31,10 +31,6 @@ class _NavState extends State<Nav> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                title: Text('Home'),
-                backgroundColor: Colors.blue),
-            BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
                 title: Text('Give'),
                 backgroundColor: Colors.blue),
@@ -46,6 +42,10 @@ class _NavState extends State<Nav> {
                 icon: Icon(Icons.groups),
                 title: Text('Community'),
                 backgroundColor: Colors.blue),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              title: Text('Profile'),
+              backgroundColor: Colors.blue),
           ],
           onTap: (index) {
             setState(() {
